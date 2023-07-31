@@ -14,7 +14,7 @@
     "start": "parcel --open",
     "prebuild": "rimraf dist",
     "build": "parcel build",
-    "build-pages": "parcel build --public-url /pizza-shop/"
+    "build-github": "rm -rf docs/* && parcel build index.html --public-url ./ -d docs"
   },
   "source": "src/index.html",
   "dependencies": {
