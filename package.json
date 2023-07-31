@@ -1,7 +1,6 @@
 {
   "name": "pizza-shop",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/decatetsu/pizza-shop",
   "author": "Andrii Yefremov <56955307+ka1tzyu@users.noreply.github.com>",
   "license": "MIT",
@@ -14,10 +13,12 @@
     "prestart": "rimraf dist && rimraf .parcel-cache",
     "start": "parcel --open",
     "prebuild": "rimraf dist",
-    "build": "parcel build"
+    "build": "parcel build",
+    "build-pages": "parcel build --public-url /pizza-shop/"
   },
   "source": "src/index.html",
   "dependencies": {
+    "@swc/helpers": "^0.5.1",
     "axios": "^1.4.0",
     "json-server": "^0.17.3",
     "react": "^18.2.0",
