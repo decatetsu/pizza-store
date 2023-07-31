@@ -17,5 +17,7 @@ Thumbs.db
 npm-debug.log
 
 node_modules/
+docs/
+dist/
 .env.local
 .parcel-cache/
