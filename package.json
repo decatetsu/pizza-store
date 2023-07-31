@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "server": "json-server --watch public/db.json --port=3000",
-    "prestart": "rimraf dist",
+    "prestart": "rimraf dist && rimraf .parcel-cache",
     "start": "parcel --open",
     "prebuild": "rimraf dist",
     "build": "parcel build"
