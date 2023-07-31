@@ -14,7 +14,8 @@
     "prestart": "rimraf dist && rimraf .parcel-cache",
     "start": "parcel --open",
     "prebuild": "rimraf dist",
-    "build": "parcel build"
+    "build": "parcel build",
+    "build-pages": "parcel build --public-url ./pizza-store"
   },
   "source": "src/index.html",
   "dependencies": {
